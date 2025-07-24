@@ -1,0 +1,67 @@
+Unity Build Diagnostic Report
+Generated: Wed Jul 23 15:35:45 PDT 2025
+Project: /Users/joshuapatterson/Coding/MR-Cube
+Target Platform: Android
+
+=== UNITY INSTALLATIONS ===
+
+[1m🔍 UNITY INSTALLATIONS[0m
+[0;32m✅ Found Unity 2022.3.62f1 at /Applications/Unity/Hub/Editor/2022.3.62f1/Unity.app/Contents/MacOS/Unity[0m
+[0;32m✅ Found Unity 6000.0.53f1 at /Applications/Unity/Hub/Editor/6000.0.53f1/Unity.app/Contents/MacOS/Unity[0m
+[0;32m✅ Found Unity 6000.0.53f1-arm64 at /Applications/Unity/Hub/Editor/6000.0.53f1-arm64/Unity.app/Contents/MacOS/Unity[0m
+Found 3 Unity installation(s)
+
+=== PROJECT STRUCTURE ===
+
+[1m📁 PROJECT STRUCTURE VALIDATION[0m
+[0;32m✅ Found directory: Assets[0m
+[0;32m✅ Found directory: ProjectSettings[0m
+[0;32m✅ Found file: ProjectSettings/ProjectSettings.asset[0m
+[0;32m✅ Found file: ProjectSettings/ProjectVersion.txt[0m
+[0;34m📄 Project Unity Version: 6000.0.53f1[0m
+
+=== ANDROID SDK ===
+
+[1m🤖 ANDROID SDK VALIDATION[0m
+[0;32m✅ Android SDK found: /opt/homebrew/share/android-commandlinetools[0m
+[0;32m✅ Build tools: 33.0.2 34.0.0[0m
+[0;32m✅ Platform tools found[0m
+[0;32m✅ ADB: Android Debug Bridge version 1.0.41[0m
+[0;32m✅ Android platforms: android-26 android-33[0m
+[0;32m✅ Java: openjdk version "24.0.2" 2025-07-15[0m
+[1;33m⚠️  Java version may not be optimal for Unity builds[0m
+[1;33m⚠️  Gradle not found in PATH (Unity may use embedded version)[0m
+
+=== BUILD LOG ANALYSIS ===
+
+[1m📋 BUILD LOG ANALYSIS[0m
+[0;34m📄 Found 13 log file(s)[0m
+[0;34m🔍 Analyzing: build_20250723_152655.log[0m
+[0;31m❌ Last build: FAILED[0m
+[0;34m📊 Errors: 47, Warnings: 34[0m
+[0;31m🚨 CRITICAL ERRORS FOUND:[0m
+[0;31m   [Licensing::Module] LicensingClient has failed validation; ignoring[0m
+[0;31m   [Licensing::Client] Error: HandshakeResponse reported an error:[0m
+[0;31m   [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-joshuapatterson"[0m
+[0;31m   [Licensing::Module] LicensingClient has failed validation; ignoring[0m
+[0;31m   [Licensing::Module] Error: Access token is unavailable; failed to update[0m
+[0;31m   LogAssemblyErrors (0ms)[0m
+[0;31m   LogAssemblyErrors (0ms)[0m
+[0;31m   [W] opendir() failed: /Users/joshuapatterson/Coding/MR-Cube/Library/Bee/artifacts/Android/il2cppOutput/cpp/Symbols[0m
+[0;31m   GRADLE ERROR : resource-not-found[0m
+[0;31m   UnityEditor.Android.GradleInvokationException:ParseAndShowException () (at /home/bokken/build/output/unity/unity/PlatformDependent/AndroidPlayer/Editor/Managed/Android/Gradle.cs:116)[0m
+[1;33m💡 Found AppCompat theme issue - check AndroidManifest.xml[0m
+[1;33m💡 Android resource linking failed - check manifest and resources[0m
+[1;33m💡 JDK issue detected - check Java installation[0m
+[1;33m💡 SDK issue detected - check Android SDK configuration[0m
+
+=== COMMON ISSUES ===
+
+[1m🔧 COMMON ISSUES CHECK[0m
+[0;34m📚 Library folder size: 8.8G[0m
+[0;34m🐝 Bee cache found (build cache)[0m
+[0;32m✅ Package manifest found[0m
+[0;34m🥽 Meta XR SDK detected[0m
+[0;34m👓 Unity XR packages detected[0m
+[0;32m✅ Custom AndroidManifest.xml found[0m
+
