@@ -16,6 +16,8 @@ namespace MRCube
         
         void Start()
         {
+            Debug.Log("PassthroughController: Start() called");
+            
             // Get the passthrough layer component
             passthroughLayer = GetComponent<OVRPassthroughLayer>();
             
@@ -25,10 +27,12 @@ namespace MRCube
                 return;
             }
             
+            Debug.Log("PassthroughController: OVRPassthroughLayer found");
+            
             // Initialize passthrough state
             SetPassthroughEnabled(startWithPassthroughEnabled);
             
-            Debug.Log($"Passthrough initialized - Enabled: {startWithPassthroughEnabled}");
+            Debug.Log($"PassthroughController: Initialized - Enabled: {startWithPassthroughEnabled}");
         }
         
         /// <summary>
@@ -71,11 +75,8 @@ namespace MRCube
         
         void Update()
         {
-            // Quick toggle with keyboard for testing
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                TogglePassthrough();
-            }
+            // For now, just log that Update is called to verify the script is running
+            // TODO: Add controller input for passthrough toggle
         }
     }
 }

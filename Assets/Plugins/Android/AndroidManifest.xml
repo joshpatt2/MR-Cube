@@ -7,15 +7,20 @@
         <category android:name="android.intent.category.LAUNCHER" />
         <category android:name="com.oculus.intent.category.VR" />
       </intent-filter>
-      <meta-data android:name="com.oculus.vr.focusaware" android:value="true" />
+    <meta-data android:name="com.oculus.vr.focusaware" android:value="true" />
+    <meta-data android:name="com.oculus.application.mode" android:value="vr" />
+    <meta-data android:name="com.oculus.intent.category.VR" android:value="vr_only" />
     </activity>
     <meta-data android:name="unityplayer.SkipPermissionsDialog" android:value="false" />
     <meta-data android:name="com.oculus.ossplash.background" android:value="black" />
     <meta-data android:name="com.oculus.telemetry.project_guid" android:value="939efe2c-a127-45d8-b530-e6970eb9550d" />
     <meta-data android:name="com.oculus.supportedDevices" android:value="quest2|questpro|quest3|quest3s" tools:replace="android:value" />
     <meta-data android:name="com.oculus.handtracking.frequency" android:value="LOW" />
+    <meta-data android:name="com.oculus.intent.category.VR" android:value="vr_only" />
   </application>
   <uses-feature android:name="android.hardware.vr.headtracking" android:version="1" android:required="true" />
   <uses-feature android:name="oculus.software.handtracking" android:required="false" />
+  <uses-feature android:name="com.oculus.feature.PASSTHROUGH" android:required="true" />
   <uses-permission android:name="com.oculus.permission.HAND_TRACKING" />
+  <uses-permission android:name="com.oculus.permission.USE_SCENE" />
 </manifest>
