@@ -1,0 +1,5 @@
+/Users/joshuapatterson/Coding/MR-Cube/.utmp/RelWithDebInfo/5t5f5543/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/joshuapatterson/Coding/MR-Cube/.utmp/RelWithDebInfo/5t5f5543/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/joshuapatterson/Coding/MR-Cube/.utmp/RelWithDebInfo/5t5f5543/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/Users/joshuapatterson/Coding/MR-Cube/.utmp/RelWithDebInfo/5t5f5543/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/Users/joshuapatterson/Coding/MR-Cube/.utmp/RelWithDebInfo/5t5f5543/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
