@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="10" result="Passed" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.1572575">
+  <test-suite type="TestSuite" id="1000" name="MR-Cube" fullname="MR-Cube" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.157258" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <test-suite type="Assembly" id="1012" name="MRCube.Tests.Editor.Basic.dll" fullname="/Users/joshuapatterson/Coding/MR-Cube/Library/ScriptAssemblies/MRCube.Tests.Editor.Basic.dll" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.150206" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="34600" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1013" name="MRCube" fullname="MRCube" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.149807" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1014" name="Tests" fullname="MRCube.Tests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.149362" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1015" name="Editor" fullname="MRCube.Tests.Editor" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.148991" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="BasicEditorTests" fullname="MRCube.Tests.Editor.BasicEditorTests" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 07:04:34Z" end-time="2025-07-25 07:04:35Z" duration="0.148104" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1003" name="AssetDatabase_IsWorking" fullname="MRCube.Tests.Editor.BasicEditorTests.AssetDatabase_IsWorking" methodname="AssetDatabase_IsWorking" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="1921082331" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.131628" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="BuildTarget_CanBeQueried" fullname="MRCube.Tests.Editor.BasicEditorTests.BuildTarget_CanBeQueried" methodname="BuildTarget_CanBeQueried" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="2006194189" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.001236" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Current build target: Android
+]]></output>
+              </test-case>
+              <test-case id="1002" name="Editor_IsAccessible" fullname="MRCube.Tests.Editor.BasicEditorTests.Editor_IsAccessible" methodname="Editor_IsAccessible" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="72799621" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000241" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="EditorPrefs_CanBeAccessed" fullname="MRCube.Tests.Editor.BasicEditorTests.EditorPrefs_CanBeAccessed" methodname="EditorPrefs_CanBeAccessed" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="144683423" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.001680" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="Handles_CanBeAccessed" fullname="MRCube.Tests.Editor.BasicEditorTests.Handles_CanBeAccessed" methodname="Handles_CanBeAccessed" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="174776674" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.001455" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="MRCube_EditorNamespace_Exists" fullname="MRCube.Tests.Editor.BasicEditorTests.MRCube_EditorNamespace_Exists" methodname="MRCube_EditorNamespace_Exists" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="1660684727" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000068" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="ProjectSettings_CanBeRead" fullname="MRCube.Tests.Editor.BasicEditorTests.ProjectSettings_CanBeRead" methodname="ProjectSettings_CanBeRead" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="62605812" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000730" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Project: MR-Cube by Joshua Patterson Dev
+]]></output>
+              </test-case>
+              <test-case id="1009" name="SceneView_CanBeAccessed" fullname="MRCube.Tests.Editor.BasicEditorTests.SceneView_CanBeAccessed" methodname="SceneView_CanBeAccessed" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="627997033" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000118" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="Selection_CanBeManipulated" fullname="MRCube.Tests.Editor.BasicEditorTests.Selection_CanBeManipulated" methodname="Selection_CanBeManipulated" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="175959558" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000703" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="Undo_SystemWorks" fullname="MRCube.Tests.Editor.BasicEditorTests.Undo_SystemWorks" methodname="Undo_SystemWorks" classname="MRCube.Tests.Editor.BasicEditorTests" runstate="Runnable" seed="621441996" result="Passed" start-time="2025-07-25 07:04:35Z" end-time="2025-07-25 07:04:35Z" duration="0.000671" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/joshuapatterson/Library/Application Support/Joshua Patterson Dev/MR-Cube/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

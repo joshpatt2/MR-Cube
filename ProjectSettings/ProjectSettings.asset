@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Joshua Patterson Dev
   productName: MR-Cube
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -140,7 +140,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 0.1.0
+  bundleVersion: 1.0.0
   preloadedAssets:
   - {fileID: 11400000, guid: 596fee8c84ea84a5b8dd102b91626d43, type: 2}
   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -165,18 +165,18 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.UnityTechnologies.com.unity.template.urpblank
-    Standalone: com.Unity-Technologies.com.unity.template.urp-blank
-    iPhone: com.Unity-Technologies.com.unity.template.urp-blank
+    Android: com.joshuapatterson.mrcube
+    Standalone: com.joshuapatterson.mrcube
+    iPhone: com.joshuapatterson.mrcube
   buildNumber:
-    Standalone: 0
-    VisionOS: 0
-    iPhone: 0
-    tvOS: 0
+    Standalone: 1
+    VisionOS: 1
+    iPhone: 1
+    tvOS: 1
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 23
-  AndroidTargetSdkVersion: 32
+  AndroidMinSdkVersion: 26
+  AndroidTargetSdkVersion: 34
   AndroidPreferredInstallLocation: 0
   aotOptions: 
   stripEngineCode: 1
