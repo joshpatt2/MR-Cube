@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="14" result="Passed" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.1303288">
+  <test-suite type="TestSuite" id="1024" name="MR-Cube" fullname="MR-Cube" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.130329" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1017" name="RuntimeTests.dll" fullname="/Users/joshuapatterson/Coding/MR-Cube/Library/ScriptAssemblies/RuntimeTests.dll" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.125626" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="59259" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1018" name="MRCube" fullname="MRCube" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.125112" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1019" name="Tests" fullname="MRCube.Tests" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.124825" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1020" name="Runtime" fullname="MRCube.Tests.Runtime" runstate="Runnable" testcasecount="14" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.124466" total="14" passed="14" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestFixture" id="1001" name="BasicRuntimeTests" fullname="MRCube.Tests.Runtime.BasicRuntimeTests" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" testcasecount="10" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.120817" total="10" passed="10" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1011" name="Application_PropertiesAccessible" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Application_PropertiesAccessible" methodname="Application_PropertiesAccessible" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="1338093888" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.005768" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="Coroutine_WorksProperly" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Coroutine_WorksProperly" methodname="Coroutine_WorksProperly" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="656825657" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.102044" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="Debug_LogWorks" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Debug_LogWorks" methodname="Debug_LogWorks" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="1003594842" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.002809" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <reason>
+                  <message><![CDATA[Debug.Log executed without error]]></message>
+                </reason>
+                <output><![CDATA[Test log message
+]]></output>
+              </test-case>
+              <test-case id="1003" name="GameObject_CanBeCreated" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.GameObject_CanBeCreated" methodname="GameObject_CanBeCreated" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="33832530" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.001657" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="MonoBehaviour_CanBeAdded" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.MonoBehaviour_CanBeAdded" methodname="MonoBehaviour_CanBeAdded" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="478862007" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000232" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="MRCube_Namespace_Exists" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.MRCube_Namespace_Exists" methodname="MRCube_Namespace_Exists" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="826825618" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000054" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="Random_FunctionsWork" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Random_FunctionsWork" methodname="Random_FunctionsWork" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="2032707760" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000080" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="Time_IsProgressing" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Time_IsProgressing" methodname="Time_IsProgressing" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="1456925909" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000060" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="Unity_IsRunning" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Unity_IsRunning" methodname="Unity_IsRunning" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="1896226695" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000055" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="Vector3_MathWorks" fullname="MRCube.Tests.Runtime.BasicRuntimeTests.Vector3_MathWorks" methodname="Vector3_MathWorks" classname="MRCube.Tests.Runtime.BasicRuntimeTests" runstate="Runnable" seed="966982660" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000598" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+            <test-suite type="TestFixture" id="1012" name="SpinCubeTests" fullname="MRCube.Tests.Runtime.SpinCubeTests" classname="MRCube.Tests.Runtime.SpinCubeTests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.002839" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-case id="1014" name="SpinCube_CanBeCreatedOnGameObject" fullname="MRCube.Tests.Runtime.SpinCubeTests.SpinCube_CanBeCreatedOnGameObject" methodname="SpinCube_CanBeCreatedOnGameObject" classname="MRCube.Tests.Runtime.SpinCubeTests" runstate="Runnable" seed="1464109731" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000369" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="SpinCube_HasConfigurableSpeed" fullname="MRCube.Tests.Runtime.SpinCubeTests.SpinCube_HasConfigurableSpeed" methodname="SpinCube_HasConfigurableSpeed" classname="MRCube.Tests.Runtime.SpinCubeTests" runstate="Runnable" seed="521488552" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000351" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="SpinCube_RotatesOverTime" fullname="MRCube.Tests.Runtime.SpinCubeTests.SpinCube_RotatesOverTime" methodname="SpinCube_RotatesOverTime" classname="MRCube.Tests.Runtime.SpinCubeTests" runstate="Runnable" seed="1684127770" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.001384" asserts="0">
+                <properties>
+                  <property name="_JOINTYPE" value="UnityCombinatorial" />
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="SpinCube_ScriptExists" fullname="MRCube.Tests.Runtime.SpinCubeTests.SpinCube_ScriptExists" methodname="SpinCube_ScriptExists" classname="MRCube.Tests.Runtime.SpinCubeTests" runstate="Runnable" seed="1247483003" result="Passed" start-time="2025-07-25 09:07:45Z" end-time="2025-07-25 09:07:45Z" duration="0.000090" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[Saving results to: /Users/joshuapatterson/Library/Application Support/Joshua Patterson Dev/MR-Cube/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

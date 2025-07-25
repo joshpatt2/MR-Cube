@@ -1,12 +1,15 @@
 using UnityEngine;
 
-public class SpinCube : MonoBehaviour
+namespace MRCube
 {
-    public float speedX = 90f; // degrees per second
-    public float speedY = 90f; // degrees per second
-
-    void Update()
+    public class SpinCube : MonoBehaviour
     {
-        transform.Rotate(speedX * Time.deltaTime, speedY * Time.deltaTime, 0f);
+        public float speedX = 90f; // degrees per second
+        public float speedY = 90f; // degrees per second
+
+        void Update()
+        {
+            transform.Rotate(speedX * Time.deltaTime, speedY * Time.deltaTime, 0f);
+        }
     }
 }

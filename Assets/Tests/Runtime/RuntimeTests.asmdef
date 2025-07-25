@@ -2,7 +2,8 @@
     "name": "RuntimeTests",
     "rootNamespace": "MRCube.Tests.Runtime",
     "references": [
-        "UnityEngine.TestRunner"
+        "UnityEngine.TestRunner",
+        "MRCube"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
