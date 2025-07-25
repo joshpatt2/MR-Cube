@@ -1,0 +1,48 @@
+buildscript {
+    repositories { **BUILD_SCRIPT_DEPS** }
+    dependencies { **BUILD_SCRIPT_DEPS** }
+}
+
+allprojects {
+    repositories { **REPOSITORIES** }
+}
+
+apply plugin: 'com.android.application'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    **DEPS**
+}
+
+android {
+    compileSdkVersion **APIVERSION**
+    buildToolsVersion '**BUILDTOOLS**'
+
+    defaultConfig {
+        applicationId '**APPLICATIONID**'
+        minSdkVersion **MINSDKVERSION**
+        targetSdkVersion **TARGETSDKVERSION**
+        versionCode **VERSIONCODE**
+        versionName '**VERSIONNAME**'
+        ndk {
+            abiFilters **ABIFILTERS**
+        }
+        **SPLITS**
+        **SIGN**
+        **DEFAULT_CONFIG_SETUP**
+    }
+
+    aaptOptions {
+        noCompress **STREAMING_ASSETS**
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled **MINIFY_DEBUG**
+        }
+        release {
+            minifyEnabled **MINIFY_RELEASE**
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-unity.txt'
+        }
+    }
+}
