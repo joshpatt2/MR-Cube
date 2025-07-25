@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="16" result="Failed(Child)" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.0262661">
+  <test-suite type="TestSuite" id="1000" name="MR-Cube" fullname="MR-Cube" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.026266" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1018" name="MRCube.Tests.Editor.dll" fullname="/Users/joshuapatterson/Coding/MR-Cube/Library/ScriptAssemblies/MRCube.Tests.Editor.dll" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.022546" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="52198" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1019" name="MRCube" fullname="MRCube" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.022221" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1020" name="Tests" fullname="MRCube.Tests" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.021941" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1021" name="Editor" fullname="MRCube.Tests.Editor" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.021706" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1001" name="BuildValidationTests" fullname="MRCube.Tests.Editor.BuildValidationTests" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" testcasecount="16" result="Failed" site="Child" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.021030" total="16" passed="15" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1007" name="Android_HasCorrectArchitecture" fullname="MRCube.Tests.Editor.BuildValidationTests.Android_HasCorrectArchitecture" methodname="Android_HasCorrectArchitecture" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1906201821" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.007061" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="Android_HasCorrectMinSDKVersion" fullname="MRCube.Tests.Editor.BuildValidationTests.Android_HasCorrectMinSDKVersion" methodname="Android_HasCorrectMinSDKVersion" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1115572480" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.001348" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="Android_HasCorrectTargetSDKVersion" fullname="MRCube.Tests.Editor.BuildValidationTests.Android_HasCorrectTargetSDKVersion" methodname="Android_HasCorrectTargetSDKVersion" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1167087150" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000056" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="AndroidManifest_Exists" fullname="MRCube.Tests.Editor.BuildValidationTests.AndroidManifest_Exists" methodname="AndroidManifest_Exists" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="2130557193" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000209" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1011" name="AndroidManifest_HasCorrectVRCategory" fullname="MRCube.Tests.Editor.BuildValidationTests.AndroidManifest_HasCorrectVRCategory" methodname="AndroidManifest_HasCorrectVRCategory" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1381353861" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000167" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="AndroidManifest_HasPassthroughFeature" fullname="MRCube.Tests.Editor.BuildValidationTests.AndroidManifest_HasPassthroughFeature" methodname="AndroidManifest_HasPassthroughFeature" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1341197714" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000127" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="Build_CanSwitchToAndroidTarget" fullname="MRCube.Tests.Editor.BuildValidationTests.Build_CanSwitchToAndroidTarget" methodname="Build_CanSwitchToAndroidTarget" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="174415432" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000520" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="Project_HasCorrectBundleIdentifier" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectBundleIdentifier" methodname="Project_HasCorrectBundleIdentifier" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1086375090" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000118" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="Project_HasCorrectColorSpace" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectColorSpace" methodname="Project_HasCorrectColorSpace" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="143067533" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000057" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1002" name="Project_HasCorrectCompanyName" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectCompanyName" methodname="Project_HasCorrectCompanyName" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1451801623" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000092" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="Project_HasCorrectGraphicsAPI" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectGraphicsAPI" methodname="Project_HasCorrectGraphicsAPI" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="366376137" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000182" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="Project_HasCorrectProductName" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectProductName" methodname="Project_HasCorrectProductName" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="13933889" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000087" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="Project_HasCorrectScriptingBackend" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasCorrectScriptingBackend" methodname="Project_HasCorrectScriptingBackend" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="373842870" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000053" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="Project_HasRequiredPackages" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasRequiredPackages" methodname="Project_HasRequiredPackages" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="890865917" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000168" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="Project_HasTestAssemblies" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasTestAssemblies" methodname="Project_HasTestAssemblies" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="574498861" result="Failed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.001783" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[  Runtime test assembly should exist
+  Expected: True
+  But was:  False
+]]></message>
+                  <stack-trace><![CDATA[at MRCube.Tests.Editor.BuildValidationTests.Project_HasTestAssemblies () [0x00023] in /Users/joshuapatterson/Coding/MR-Cube/Assets/Tests/Editor/BuildValidationTests.cs:121
+]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1017" name="Project_HasVREnabled" fullname="MRCube.Tests.Editor.BuildValidationTests.Project_HasVREnabled" methodname="Project_HasVREnabled" classname="MRCube.Tests.Editor.BuildValidationTests" runstate="Runnable" seed="1642167540" result="Passed" start-time="2025-07-25 08:48:02Z" end-time="2025-07-25 08:48:02Z" duration="0.000906" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <output><![CDATA[VR settings test - using XR Management package for VR support
+Saving results to: /Users/joshuapatterson/Library/Application Support/Joshua Patterson Dev/MR-Cube/TestResults.xml
+]]></output>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

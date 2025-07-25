@@ -2,15 +2,14 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using System.Collections;
-using MRCube;
 
 namespace MRCube.Tests.Runtime
 {
     /// <summary>
-    /// Performance and stress tests for MR-Cube
-    /// These tests validate performance characteristics and memory usage
+    /// Basic runtime tests for MR-Cube
+    /// These tests validate basic Unity functionality without VR dependencies
     /// </summary>
-    public class PerformanceTests
+    public class BasicRuntimeTests
     {
         private GameObject testGameObject;
         private PassthroughController controller;
