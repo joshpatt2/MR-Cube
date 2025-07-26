@@ -943,7 +943,7 @@ MonoBehaviour:
   virtualGreenScreenDepthTolerance: 0.2
   mrcActivationMode: 0
   launchSimultaneousHandsControllersOnStartup: 0
-  isInsightPassthroughEnabled: 1
+  isInsightPassthroughEnabled: 0
   shouldBoundaryVisibilityBeSuppressed: 0
   requestBodyTrackingPermissionOnStartup: 0
   requestFaceTrackingPermissionOnStartup: 0
@@ -1108,7 +1108,6 @@ GameObject:
   - component: {fileID: 1028263564}
   - component: {fileID: 1028263563}
   - component: {fileID: 1028263562}
-  - component: {fileID: 5555555555}
   m_Layer: 0
   m_Name: '[BuildingBlock] Cube'
   m_TagString: Untagged
@@ -1116,41 +1115,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028263560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 1028263567}
-  _maxGrabPoints: -1
-  _rigidbody: {fileID: 1028263562}
-  _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
---- !u!114 &5555555555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1028263560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b08f63cc9fe4c4da3847e8534ec65e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speedX: 90
-  speedY: 90
 --- !u!54 &1028263562
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1279,7 +1243,7 @@ Transform:
   m_GameObject: {fileID: 1028263560}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -2.0}
+  m_LocalPosition: {x: 1, y: 1, z: 2}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1752,6 +1716,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startWithPassthroughEnabled: 1
   opacity: 1
+--- !u!114 &5555555555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028263560}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08f63cc9fe4c4da3847e8534ec65e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedX: 90
+  speedY: 90
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1760,4 +1738,3 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 703456353}
   - {fileID: 1028263567}
-  - {fileID: 2100000001}
