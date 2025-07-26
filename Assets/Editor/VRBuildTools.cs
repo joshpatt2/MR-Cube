@@ -8,13 +8,21 @@ using UnityEngine;
 /// This script provides build methods that can be called from the unity-builder.sh script
 /// Place this in your Unity project's Editor folder
 /// </summary>
-public static class VRBuildTools
+public class VRBuildTools
 {
     private static readonly string BuildPath = "Builds";
+    
+    // Simple test method
+    public static void TestMethod()
+    {
+        Debug.Log("VRBuildTools.TestMethod() was called successfully!");
+        Debug.Log("Unity can execute our methods.");
+    }
     
     [MenuItem("Build/Build for Quest (Android)")]
     public static void BuildForQuest()
     {
+        Debug.Log("VRBuildTools.BuildForQuest() starting...");
         BuildForAndroid(true);
     }
     
@@ -98,8 +106,8 @@ public static class VRBuildTools
     {
         Debug.Log("Configuring VR settings...");
         
-        // Enable VR
-        PlayerSettings.virtualRealitySupported = true;
+        // Note: VR support is now handled by XR Plugin Management
+        // PlayerSettings.virtualRealitySupported is obsolete
         
         // Configure XR settings for newer Unity versions
         try
@@ -134,83 +142,94 @@ public static class VRBuildTools
     /// </summary>
     private static void BuildGeneric(BuildTarget buildTarget, string buildPath, string buildType = "Standard")
     {
-        Debug.Log($"Building {buildType} build for {buildTarget}...");
-        Debug.Log($"Output path: {buildPath}");
-        
-        // Ensure directory exists
-        string directory = Path.GetDirectoryName(buildPath);
-        if (!Directory.Exists(directory))
+        try
         {
-            Directory.CreateDirectory(directory);
-        }
-        
-        // Get scenes to build
-        string[] scenes = GetScenesFromBuildSettings();
-        
-        if (scenes.Length == 0)
-        {
-            Debug.LogError("No scenes found in build settings!");
-            return;
-        }
-        
-        // Configure build options
-        BuildOptions buildOptions = BuildOptions.None;
-        
-        // Check if this is a development build
-        if (EditorUserBuildSettings.development)
-        {
-            buildOptions |= BuildOptions.Development;
+            Debug.Log($"Building {buildType} build for {buildTarget}...");
+            Debug.Log($"Output path: {buildPath}");
             
-            if (EditorUserBuildSettings.allowDebugging)
+            // Ensure directory exists
+            string directory = Path.GetDirectoryName(buildPath);
+            if (!Directory.Exists(directory))
             {
-                buildOptions |= BuildOptions.AllowDebugging;
+                Directory.CreateDirectory(directory);
+                Debug.Log($"Created directory: {directory}");
             }
             
-            if (EditorUserBuildSettings.connectProfiler)
-            {
-                buildOptions |= BuildOptions.ConnectWithProfiler;
-            }
-        }
-        
-        // Build player settings
-        BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions
-        {
-            scenes = scenes,
-            locationPathName = buildPath,
-            target = buildTarget,
-            options = buildOptions
-        };
-        
-        // Start build
-        var report = BuildPipeline.BuildPlayer(buildPlayerOptions);
-        
-        // Handle build result
-        if (report.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded)
-        {
-            Debug.Log($"Build succeeded! Size: {report.summary.totalSize} bytes");
-            Debug.Log($"Build time: {report.summary.totalTime}");
+            // Get scenes to build
+            string[] scenes = GetScenesFromBuildSettings();
             
-            // Open build folder on macOS
-            if (Application.platform == RuntimePlatform.OSXEditor)
+            if (scenes.Length == 0)
             {
-                System.Diagnostics.Process.Start("open", $"-R \"{buildPath}\"");
+                Debug.LogError("No scenes found in build settings!");
+                return;
             }
-        }
-        else
-        {
-            Debug.LogError($"Build failed with result: {report.summary.result}");
             
-            // Log errors
-            foreach (var step in report.steps)
+            Debug.Log($"Building with {scenes.Length} scenes: {string.Join(", ", scenes)}");
+            
+            // Configure build options
+            BuildOptions buildOptions = BuildOptions.None;
+            
+            // Check if this is a development build
+            if (EditorUserBuildSettings.development)
             {
-                foreach (var message in step.messages)
+                buildOptions |= BuildOptions.Development;
+                
+                if (EditorUserBuildSettings.allowDebugging)
                 {
-                    if (message.type == LogType.Error)
+                    buildOptions |= BuildOptions.AllowDebugging;
+                }
+                
+                if (EditorUserBuildSettings.connectProfiler)
+                {
+                    buildOptions |= BuildOptions.ConnectWithProfiler;
+                }
+            }
+            
+            // Build player settings
+            BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions
+            {
+                scenes = scenes,
+                locationPathName = buildPath,
+                target = buildTarget,
+                options = buildOptions
+            };
+            
+            // Start build
+            var report = BuildPipeline.BuildPlayer(buildPlayerOptions);
+            
+            // Handle build result
+            if (report.summary.result == UnityEditor.Build.Reporting.BuildResult.Succeeded)
+            {
+                Debug.Log($"Build succeeded! Size: {report.summary.totalSize} bytes");
+                Debug.Log($"Build time: {report.summary.totalTime}");
+                
+                // Open build folder on macOS
+                if (Application.platform == RuntimePlatform.OSXEditor)
+                {
+                    System.Diagnostics.Process.Start("open", $"-R \"{buildPath}\"");
+                }
+            }
+            else
+            {
+                Debug.LogError($"Build failed with result: {report.summary.result}");
+                
+                // Log errors
+                foreach (var step in report.steps)
+                {
+                    foreach (var message in step.messages)
                     {
-                        Debug.LogError($"Build Error: {message.content}");
+                        if (message.type == LogType.Error)
+                        {
+                            Debug.LogError($"Build Error: {message.content}");
+                        }
                     }
                 }
             }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"Build failed with exception: {ex.Message}");
+            Debug.LogError($"Stack trace: {ex.StackTrace}");
         }
     }
     
